@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "Lab2-2"
+    workspaces {
+      name = "workspace-ortega"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
